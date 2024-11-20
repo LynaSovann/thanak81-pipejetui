@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: thanak81-pipejetui-certificate
+  namespace: thanak81-pipejetui
+spec:
+  secretName: thanak81-pipejetui-secret-tls
+  commonName: thanak81-pipejetui.assessify.org
+  dnsNames:
+  - thanak81-pipejetui.assessify.org
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
