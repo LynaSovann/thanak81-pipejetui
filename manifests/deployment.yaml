@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: thanak81-pipejetui-container
-          image: pipejet/thanak81-pipejetui:11
+          image: pipejet/thanak81-pipejetui:12
           ports:
             - containerPort: 5173
